@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Faire un premier formulaire simple">
+	<title>Un formulaire simple</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Création d'un formulaire</h1>
+	</header>
+
+	<main class="container">
+		<form action="create-address.php" method="post">
+			<fieldset>
+				<legend>Contact details</legend>
+				<div class="field">
+					<label for="street">Street Adresse</label>
+					<input type="text" id="street" name="street" placeHolder="Exemple: 10 Downing Street" />
+				</div><br>
+				<div class="field">
+					<label for="city">Nom</label>
+					<input type="text" id="city" name="city" placeHolder="Exemple: London, UK"/>
+				</div><br>
+				<div class="field">
+					<label for="zipcode">Zipcode</label>
+					<input type="text" id="zipcode" name="zipcode" placeHolder="Exemple: SW1A 2AA" />
+				</div>
+			</fieldset><br>
+			<div class="toolbar">
+				<button class="button-submit" type="submit">submit</button>
+			</div>
+		</form>
+	</main>
+
+</body>
+
+</html>
